@@ -1,0 +1,34 @@
+/Users/yukinori_sato/.zshrc:1: = not found
+yukinori_sato@satoumotonorinoMacBook-Pro ~ % cd /Users/yukinori_sato/Documents/samurai/samurai-terakoya
+yukinori_sato@satoumotonorinoMacBook-Pro samurai-terakoya % mkdir git_challenge
+yukinori_sato@satoumotonorinoMacBook-Pro samurai-terakoya % cd ./git_challenge/
+yukinori_sato@satoumotonorinoMacBook-Pro git_challenge % git init
+Initialized empty Git repository in /Users/yukinori_sato/Documents/samurai/samurai-terakoya/git_challenge/.git/
+yukinori_sato@satoumotonorinoMacBook-Pro git_challenge % echo Hello, world! >> hello_world.txt
+yukinori_sato@satoumotonorinoMacBook-Pro git_challenge % git add /Users/yukinori_sato/Documents/samurai/samurai-terakoya/git_challenge/hello_world.txt
+yukinori_sato@satoumotonorinoMacBook-Pro git_challenge % git commit -m "hello_world.txtを追加"
+[main (root-commit) d51fa56] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+yukinori_sato@satoumotonorinoMacBook-Pro git_challenge % echo "こんにちは、世界！" >> ./hello_world.txt
+yukinori_sato@satoumotonorinoMacBook-Pro git_challenge % git add /Users/yukinori_sato/Documents/samurai/samurai-terakoya/git_challenge/hello_world.txt
+yukinori_sato@satoumotonorinoMacBook-Pro git_challenge % git commit -m "日本語訳を追記"                
+[main fcb2c1b] 日本語訳を追記
+ 1 file changed, 1 insertion(+)
+yukinori_sato@satoumotonorinoMacBook-Pro git_challenge % git log --oneline
+fcb2c1b (HEAD -> main) 日本語訳を追記
+yukinori_sato@satoumotonorinoMacBook-Pro git_challenge % git log    
+commit fcb2c1bebbaec9b33f06037d4e2d2e5d65710e11 (HEAD -> main)
+Author: yoro4ku <6969noisecompany@mail.com>
+Date:   Sat Jan 3 02:54:29 2026 +0900
+
+    日本語訳を追記
+
+commit d51fa565902bef35162068a8a22109f5ef72ec82
+Author: yoro4ku <6969noisecompany@mail.com>
+Date:   Sat Jan 3 02:52:55 2026 +0900
+
+    hello_world.txtを追加
+yukinori_sato@satoumotonorinoMacBook-Pro git_challenge % git log --oneline
+fcb2c1b (HEAD -> main) 日本語訳を追記
+d51fa56 hello_world.txtを追加
